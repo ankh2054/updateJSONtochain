@@ -8,7 +8,9 @@ EXEC="/home/charles/wax-backup/cleos.sh"
 
 
 createJSON(){
-    curl $JSONLOC -o bp.json
+    #wget --quiet -O - $JSONLOC | jq -M -c '.' >bp.json
+    #sed -i 's/"/\\"/g' bp.json
+    curl -s $JSONLOC | jq -M -c '.' | tr -d '\n' | awk '{gsub(/"/,"\\\""); print}' > bp.json
 }
 
 updateJSON(){
