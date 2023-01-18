@@ -6,13 +6,17 @@
 
 Script that downloads your guilds JSON from your website and pushes it to chain using greyness producerjson contract.
 
+## Requirements 
+
+- jq 
+- perl
+
 
 ## Installation
 
 1. Update updateJSON.sh config details to match your own
  - JSONLOC="https://www.sentnl.io/wax.json"
  - WALLET_PW=XXXXXXXXXXXXXXXXXXXXXXX
- - PRODUCER=sentnlagents
  - EXEC="/home/charles/wax-backup/cleos.sh" 
 
 2. Setup a cron script to run this daily.
