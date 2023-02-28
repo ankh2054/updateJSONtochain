@@ -4,7 +4,7 @@
 
 # Sentnl.io  
 
-Script that downloads your guilds JSON from your website and pushes it to chain using greyness producerjson contract.
+Script that downloads your guilds JSON from your website and pushes it to chain using greymass producerjson contract.
 
 ## Requirements 
 
