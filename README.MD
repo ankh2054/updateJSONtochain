@@ -9,7 +9,6 @@ Script that downloads your guilds JSON from your website and pushes it to chain 
 ## Requirements 
 
 - jq 
-- perl
 
 
 ## Installation
